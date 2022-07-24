@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.clipPath {
+    width: 75%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    filter: saturate(50);
+    clip-path: polygon(0% 0%, 88% 0, 81% 51%, 74% 100%, 0% 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.green-cover {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(46, 110, 105);
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.btn-darkgreen {
+    background: #1d3b3b;
+}
+
+
+.coming-soon {
+    position: absolute;
+    top: 35%;
+    left: 300px;
+    z-index:100;
+}
+.form-control {
+    height: 58px;
+    width: 325px !important;
+}
+.bg-light {
+    background: #a7acac !important;
+}
+
+.social-media__item {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    background: #000;
+}
+
+.social-media__item i {
+    position: absolute;
+    top: 38%;
+    left: 38%;
+}
+
+.ml-5 {
+    margin-left: 6rem !important;
+}
+
+.coming-row p {
+    word-break: break-all !important;
+}
+
+
+@media (max-width:576px) {
+    .clipPath {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
